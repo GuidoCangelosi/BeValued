@@ -1,0 +1,36 @@
+
+Single Page Application using Angular routing
+List view showing just Full Name (e.g. Mr Windy Miller)
+In alphabetical order (Surname then Firstname)
+Only required data should be returned by the server, no paging is required
+Click on a user should navigate to details view
+All details (except Id) to be shown with labels
+Minimal css required, you may import bootstrap or angular material framework
+
+--------------------------------------------------------------------------------------
+These worked from within VS Code terminal
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+
+Get-ExecutionPolicy -List
+
+ng g i interfaces/pet
+returns error:
+ng: file ... is not digitally signed
+
+Solution
+
+    Open up Windows Powershell as Administrator
+    Run the following command: set-executionpolicy remotesigned
+    You should be able to now run commands in the Visual Studio Code terminal for Angular and Node.js.
+
+
+
+
+set-ExecutionPolicy : Windows PowerShell updated your execution policy successfully, but the setting is overridden by
+a policy defined at a more specific scope.  Due to the override, your shell will retain its current effective
+execution policy of AllSigned. Type "Get-ExecutionPolicy -List" to view your execution policy settings. For more
+information please see "Get-Help Set-ExecutionPolicy".
+
+
